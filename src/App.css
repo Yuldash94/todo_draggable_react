@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: #514545;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper-input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ddc1c1;
+  background: none;
+  color: #ddc1c1;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ddc1c1;
+  border-radius: 3px;
+  background: none;
+  color: #ddc1c1;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.add:hover {
+  background: rgb(231, 231, 231);
+  color: #514545;
+  cursor: pointer;
+}
+
+.todo-item {
+  position: absolute;
+  cursor: move;
+  min-width: 250px;
+  color: #514545;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+}
+
+.delete-btn:hover {
+  color: red;
+  cursor: pointer;
 }
